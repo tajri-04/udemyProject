@@ -1,0 +1,11 @@
+<div class="container">
+  <section class="row">
+    <div *ngFor="let tigre of tigres;let i=index" class="col-lg-2">
+      <a  style="cursor: pointer" [routerLink]="[i]">
+      <img [src]="tigre.imagePath" alt="Tigre"
+           class="img-responsive">
+      </a>
+    </div>
+  </section>
+</div>
+
